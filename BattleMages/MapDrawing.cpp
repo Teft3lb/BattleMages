@@ -1,7 +1,8 @@
-﻿#include "Level.h"
+#include "Engine.h"
 
-void Level::mapDraw()
+void Engine::mapDrawing()
 {
+
 	const int HEIGHT_MAP = 20;
 	const int WIDTH_MAP = 20;
 
@@ -46,11 +47,11 @@ void Level::mapDraw()
 	{
 		for (int j = 0; j < WIDTH_MAP; j++)
 		{
-			if (tileMap[i][j] == ' ') s_map.setTextureRect(sf::IntRect(64, 64, 32, 32));
-			if (tileMap[i][j] == '0') s_map.setTextureRect(sf::IntRect(142, 0, 32, 32));
-			if (tileMap[i][j] == 'b') s_map.setTextureRect(sf::IntRect(256, 0, 32, 32));
+			if (tileMap[i][j] == ' ') s_map.setTextureRect(sf::IntRect(34, 35, 31, 31));
+			if (tileMap[i][j] == '0') s_map.setTextureRect(sf::IntRect(100, 2, 31, 31));
+			if (tileMap[i][j] == 'b') s_map.setTextureRect(sf::IntRect(265, 35, 31, 31));
 			s_map.setPosition(j * 31, i * 31);
-			
+			m_Window.draw(s_map);
 		}
 	}
 }

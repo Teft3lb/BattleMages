@@ -1,5 +1,6 @@
 #pragma once
-#include "includes.h"
+//#include "includes.h"
+#include <SFML/Graphics.hpp>
 class Player
 {
 	void control();
