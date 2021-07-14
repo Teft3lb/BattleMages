@@ -3,7 +3,7 @@
 Engine::Engine()
 {
 
-	m_Window.create(sf::VideoMode(640, 640), "Battle Mages");
+	m_Window.create(sf::VideoMode(620, 620), "Battle Mages");
 
 };
 
@@ -19,8 +19,11 @@ void Engine::draw()
 	m_Window.clear(sf::Color::White);
 
 	mapDrawing();
+
+	m_Window.draw(player1.getSprite());
 	
 	m_Window.display();
+
 };
 
 
@@ -28,9 +31,6 @@ void Engine::play()
 {
 
 	sf::Clock clock;
-	// Объект, который, собственно, является главным окном приложения
-	
-	// Главный цикл приложения. Выполняется, пока открыто окно
 
 	while (m_Window.isOpen())
 	{
@@ -48,10 +48,7 @@ void Engine::play()
 		
 		input();
 		update(dtAsSeconds);
-
-		draw();
-
-		
+		draw();		
 	}
 };
 
