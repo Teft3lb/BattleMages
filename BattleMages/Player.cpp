@@ -18,6 +18,16 @@ sf::Sprite Player::getSprite()
 	return m_Sprite;
 }
 
+float Player::getPositionX()
+{
+	return m_Position.x;
+}
+
+float Player::getPositionY()
+{
+	return m_Position.y;
+}
+
 void Player::update(float elapsedTime)
 {
 	if (leftPressed)

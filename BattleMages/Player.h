@@ -36,6 +36,7 @@ public:
 	void stopUp();
 	void stopDown();
 
-
+	float getPositionX();
+	float getPositionY();
 };
 
