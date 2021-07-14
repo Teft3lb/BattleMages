@@ -3,13 +3,17 @@
 #include <SFML/Graphics.hpp>
 class Player
 {
-	void control();
-
+	
 	sf::Vector2f m_Position;
 
 	sf::Sprite m_Sprite;
 
 	sf::Texture m_Texture;
+
+	bool leftPressed;
+	bool rightPressed;
+	bool upPressed;
+	bool downPressed;
 
 	float m_Speed;
 
@@ -20,6 +24,8 @@ public:
 	sf::Sprite getSprite();
 
 	void update(float elapsedTime);
+
+	
 
 
 };
