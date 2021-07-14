@@ -25,7 +25,15 @@ public:
 
 	void update(float elapsedTime);
 
-	
+	void moveLeft();
+	void moveRight();
+	void moveUp();
+	void moveDown();
+
+	void stopLeft();
+	void stopRight();
+	void stopUp();
+	void stopDown();
 
 
 };
