@@ -2,7 +2,7 @@
 
 Player::Player()
 {
-	m_Speed = 200;
+	m_Speed = 70;
 
 	m_Texture.loadFromFile("Images/Player1.png");
 	m_Sprite.setTexture(m_Texture);
@@ -20,10 +20,46 @@ sf::Sprite Player::getSprite()
 
 void Player::update(float elapsedTime)
 {
-	if (leftPressed)m_Position.x -= m_Speed * elapsedTime;
-	if (rightPressed)m_Position.x += m_Speed * elapsedTime;
-	if (upPressed)m_Position.y -= m_Speed * elapsedTime;
-	if (downPressed)m_Position.y += m_Speed * elapsedTime;
+	if (leftPressed)
+	{
+		m_Position.x -= m_Speed * elapsedTime;
+		currentFrame += 5 * elapsedTime;
+		if (currentFrame > 4)
+		{
+			currentFrame -= 4;
+		}
+		m_Sprite.setTextureRect(sf::IntRect(32 * int(currentFrame), 48, 31, 48));
+	}
+	if (rightPressed)
+	{
+		m_Position.x += m_Speed * elapsedTime;
+		currentFrame += 5 * elapsedTime;
+		if (currentFrame > 4)
+		{
+			currentFrame -= 4;
+		}
+		m_Sprite.setTextureRect(sf::IntRect(32 * int(currentFrame), 96, 31, 48));
+	}
+	if (upPressed)
+	{
+		m_Position.y -= m_Speed * elapsedTime;
+		currentFrame += 5 * elapsedTime;
+		if (currentFrame > 4)
+		{
+			currentFrame -= 4;
+		}
+		m_Sprite.setTextureRect(sf::IntRect(32 * int(currentFrame), 146, 31, 48));
+	}
+	if (downPressed)
+	{
+		m_Position.y += m_Speed * elapsedTime;
+		currentFrame += 5 * elapsedTime;
+		if (currentFrame > 4)
+		{
+			currentFrame -= 4;
+		}
+		m_Sprite.setTextureRect(sf::IntRect(32 * int(currentFrame), 0, 31, 48));
+	}
 	m_Sprite.setPosition(m_Position);
 }
 ///////////////////////////////////////////////////////////////////////////////
@@ -33,7 +69,7 @@ void Player::update(float elapsedTime)
 
 void Player::moveLeft()
 {
-	leftPressed = true;
+	leftPressed = true;	
 }
 void Player::moveRight()
 {

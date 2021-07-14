@@ -16,6 +16,7 @@ class Player
 	bool downPressed;
 
 	float m_Speed;
+	float currentFrame=0;
 
 public:
 
