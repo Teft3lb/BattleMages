@@ -48,10 +48,7 @@ void Engine::play()
 		
 		input();
 		update(dtAsSeconds);
-
-		draw();
-
-		
+		draw();		
 	}
 };
 
