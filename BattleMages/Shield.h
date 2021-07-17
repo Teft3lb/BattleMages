@@ -7,6 +7,7 @@ class Shield: public Player
 	float y;
 
 	bool isActive;
+	bool canBeActivated;
 
 
 	Player playerSprite;
@@ -20,6 +21,6 @@ public:
 
 	void isShieldActive();
 	void isShiledInactive();
-
+	void shieldCountDown(float countDown);
 };
 
