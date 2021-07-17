@@ -54,4 +54,15 @@ void Engine::mapDrawing()
 			m_Window.draw(s_map);
 		}
 	}
+
+	for (int i = 0; i < HEIGHT_MAP; i++)
+	{
+		for (int j = 0; j < WIDTH_MAP; j++)
+		{
+			if (tileMap[i][j] == '0')
+			{
+				if (player1.moveDown())
+			}
+		}
+	}
 }
