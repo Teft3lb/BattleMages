@@ -19,4 +19,5 @@ void Shield::shieldCountDown(float countDown)
 	{
 		canBeActivated = true;
 	}
+	else canBeActivated = false;
 }
