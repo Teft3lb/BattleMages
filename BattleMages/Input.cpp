@@ -20,7 +20,7 @@ void Engine::input()
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))player1.moveDown();
 	else player1.stopDown();
 		
-	
+
 };
 
 

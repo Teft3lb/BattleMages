@@ -39,7 +39,10 @@
     <ClCompile Include="Draw.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Spell.cpp">
+    <ClCompile Include="Shield.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionWithMap.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -56,7 +59,7 @@
     <ClInclude Include="Engine.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Spell.h">
+    <ClInclude Include="Shield.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
