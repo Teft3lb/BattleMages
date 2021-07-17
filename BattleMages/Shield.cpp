@@ -13,3 +13,10 @@ void Shield::isShieldActive()
 	bool isActive = true;
 }
 
+void Shield::shieldCountDown(float countDown)
+{
+	if (countDown > 5)
+	{
+		canBeActivated = true;
+	}
+}
