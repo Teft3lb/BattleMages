@@ -1,14 +1,13 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "Player.h"
-class Spell
+class Shield: public Player
 {
 	float x;
 	float y;
 
 	bool isActive;
 
-	int durability;
 
 	Player playerSprite;
 
@@ -17,13 +16,10 @@ class Spell
 
 public:
 	Shield();
+	~Shield();
 
 	void isShieldActive();
 	void isShiledInactive();
-
-	void discraseDurability();
-
-	void incraseDurability();
 
 };
 

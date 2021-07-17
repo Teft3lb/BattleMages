@@ -1,6 +1,7 @@
 #pragma once
 #include "includes.h"
 #include "Player.h"
+#include "Shield.h"
 
 class Engine
 {
@@ -8,7 +9,7 @@ class Engine
 	sf::Sprite m_Sprite;
 	sf::Texture m_Texture;
 	Player player1;
-
+	
 public:
 
 
@@ -23,5 +24,7 @@ public:
 	void input();
 
 	void mapDrawing();
+
+	void collisionWithMap();
 };
 
