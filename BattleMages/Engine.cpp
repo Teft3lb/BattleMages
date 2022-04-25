@@ -29,6 +29,7 @@ void Engine::play()
 
 		
 		input();
+		collisionWithMap();
 		update(dtAsSeconds);
 		draw();		
 	}

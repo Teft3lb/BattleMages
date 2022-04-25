@@ -28,6 +28,36 @@ float Player::getPositionY()
 	return m_Position.y;
 }
 
+void Player::setPositionX()
+{
+	m_Position.x = 200;
+}
+
+void Player::setPositionY()
+{
+	m_Position.y = 300;
+}
+
+int Player::getDirectionX()
+{
+	return m_Position.x;
+}
+
+int Player::getDirectionY()
+{
+	return m_Position.y;
+}
+
+void Player::setDirectionX(int i)
+{
+	m_Position.x = i;
+}
+
+void Player::setDirectionY(int i)
+{
+	m_Position.y = i;
+}
+
 void Player::update(float elapsedTime)
 {
 	if (leftPressed)
