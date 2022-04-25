@@ -10,6 +10,9 @@ class Player
 
 	sf::Texture m_Texture;
 
+	int directionX = 0;
+	int directionY = 0;
+
 	bool leftPressed;
 	bool rightPressed;
 	bool upPressed;
@@ -23,6 +26,7 @@ public:
 	Player();
 
 	sf::Sprite getSprite();
+
 
 	void update(float elapsedTime);
 
@@ -38,5 +42,15 @@ public:
 
 	float getPositionX();
 	float getPositionY();
+
+	void setPositionX();
+	void setPositionY();
+
+	int getDirectionX();
+	int getDirectionY();
+
+	void setDirectionX(int i);
+	void setDirectionY(int i);
+	
 };
 
